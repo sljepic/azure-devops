@@ -3,7 +3,7 @@ hello:
 install:
 	pip install --upgrade pip &&\
 		pip install -r starter_files/requirements.txt
-format:
+lint:
 	pylint --disable=R,C,E1120 starter_files/hello.py
 test:
 	python -m pytest -vv starter_files/test_hello.py
