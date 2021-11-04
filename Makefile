@@ -4,6 +4,6 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r starter_files/requirements.txt
 lint:
-	pylint --disable=R,C,E1120 starter_files/hello.py
+	pylint --disable=R,C,E1120,E0001 starter_files/hello.py
 test:
 	python -m pytest -vv starter_files/test_hello.py
