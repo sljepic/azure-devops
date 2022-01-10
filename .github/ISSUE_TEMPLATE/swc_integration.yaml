@@ -14,13 +14,13 @@ body:
   id: swc_name
   attributes:
     label: Software component name
-    placeholder: e.g. v1.0
   validations:
     required: true
 - type: input
   id: swc_version
   attributes:
     label: Software component version
+    placeholder: e.g. v1.0
   validations:
     required: true
 - type: dropdown
