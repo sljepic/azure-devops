@@ -1,5 +1,5 @@
-name: Bug Report
-description: File a bug report
+name: Software component integration
+description: Issue request with all required input informations
 title: "[Bug]: "
 labels: [bug, triage]
 assignees:
