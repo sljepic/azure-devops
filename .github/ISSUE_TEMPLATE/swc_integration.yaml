@@ -16,20 +16,28 @@ body:
     label: Software component name
   validations:
     required: true
+- type: input
+  id: swc_version
   attributes:
     label: Software component version
   validations:
     required: true
+- type: input
+  id: PIE_version
   attributes:
     label: PIE version
   validations:
     required: true
+- type: input
+  id: AOS_version
   attributes:
     label: AOS version
   validations:
     required: true
+- type: input
+  id: HW_variant_version
   attributes:
-    label: HW variant
+    label: HW variant version
   validations:
     required: true
   attributes:
