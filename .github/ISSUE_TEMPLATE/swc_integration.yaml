@@ -72,3 +72,6 @@ body:
     placeholder: e.g. www.artifactory.com/repository/delivery_package_directory/
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: "Delivery package mapping:"
