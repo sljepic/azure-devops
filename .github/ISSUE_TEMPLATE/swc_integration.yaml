@@ -23,6 +23,20 @@ body:
     label: Software component version
   validations:
     required: true
+- type: dropdown
+  id: PIE_version
+  attributes:
+    label: PIE Version
+    description: What version of PIE are you running?
+    options:
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 3.0.0
+  validations:
+    required: true
 - type: input
   id: Artifactory_URL
   attributes:
