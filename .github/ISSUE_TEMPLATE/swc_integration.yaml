@@ -14,6 +14,26 @@ body:
   id: swc_name
   attributes:
     label: Software component name
-    description: How can we get in touch with you if we need more info?
   validations:
     required: true
+  attributes:
+    label: Software component version
+  validations:
+    required: true
+  attributes:
+    label: PIE version
+  validations:
+    required: true
+  attributes:
+    label: AOS version
+  validations:
+    required: true
+  attributes:
+    label: HW variant
+  validations:
+    required: true
+  attributes:
+    label: Artifactory URL to delivery package directory
+  validations:
+    required: true
+  attributes:
