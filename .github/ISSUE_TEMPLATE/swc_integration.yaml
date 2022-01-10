@@ -79,6 +79,19 @@ body:
   id: release_notes
   attributes:
     label: Release notes relative file path
-    description: Please provide Release notes relative path
+  validations:
+    required: true
+- type: input
+  id: ait_report
+  attributes:
+    label: AIT report relative file path
+    description: Please provide AIT report relative path
+validations:
+    required: true
+- type: input
+  id: misra 
+  attributes:
+    label: MISRA file relative file path
+    description: Please provide MISRA relative path 
   validations:
     required: true
