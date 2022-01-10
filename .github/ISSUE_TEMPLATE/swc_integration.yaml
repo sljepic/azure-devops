@@ -75,3 +75,10 @@ body:
 - type: markdown
   attributes:
     value: "## Delivery package mapping:"
+- type: input
+  id: release_notes
+  attributes:
+    label: Release notes relative file path
+    description: Please provide Release notes relative path
+  validations:
+    required: true
