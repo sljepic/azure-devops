@@ -132,18 +132,3 @@ validations:
     description: Please provide Map relative file path
   validations:
     required: true
-- type: input
-  id: log_path  
-  attributes:
-    label: Log relative file path
-    description: Please provide Log relative file path  
-  validations:
-    required: true
-- type: input
-  id: test_vectors  
-  attributes:
-    label: Test vectors relative file path
-    description: Please provide Test vectors relative file path
-  validations:
-    required: true
-
