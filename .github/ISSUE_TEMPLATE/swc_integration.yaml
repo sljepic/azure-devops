@@ -1,10 +1,10 @@
 name: Software component integration
 description: Issue request with all required input informations
-title: "[Bug]: "
-labels: [bug, triage]
+title: "[SWC Integration]: "
+labels: [pre-integration]
 assignees:
-- monalisa
-- nat
+- team alas
+- team volta
 body:
 - type: markdown
   attributes:
