@@ -75,3 +75,75 @@ body:
 - type: markdown
   attributes:
     value: "## Delivery package mapping:"
+    description: Please provide relative paths from delivery package
+- type: input
+  id: release_notes
+  description: Please provide relative path to Release notes
+  attributes:
+    label: Release notes relative file path
+  validations:
+    required: true
+- type: input
+  id: ait_report
+  description: Please provide AIT report relative path
+  attributes:
+    label: AIT report relative file path
+  validations:
+    required: true
+- type: input
+  id: misra 
+  description: Please provide MISRA relative path 
+  attributes:
+    label: MISRA file relative file path
+  validations:
+    required: true
+- type: input
+  id: libraries
+  description: Please provide relative path to Libraries
+  attributes:
+    label: Libraries relative file path
+  validations:
+    required: true
+- type: input
+  id: sillibraries 
+  description: Please provide relative path to SiLLibraries 
+  attributes:
+    label: SiLLibraries relative file path
+  validations:
+    required: true
+- type: input
+  id: binaries  
+  description: Please provide relative path to Binaries  
+  attributes:
+    label: Binaries relative file path
+  validations:
+    required: true
+- type: input
+  id: data_sets  
+  description: Please provide relative path to Data Sets  
+  attributes:
+    label: Binaries relative file path
+  validations:
+    required: true
+- type: input
+  id: map_path  
+  description: Please provide Map relative file path  
+  attributes:
+    label: Map relative file path
+  validations:
+    required: true
+- type: input
+  id: log_path  
+  description: Please provide Log relative file path  
+  attributes:
+    label: Log relative file path
+  validations:
+    required: true
+- type: input
+  id: test_vectors  
+  description: Please provide Test vectors relative file path  
+  attributes:
+    label: Test vectors relative file path
+  validations:
+    required: true
+
