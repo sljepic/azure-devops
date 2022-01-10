@@ -37,9 +37,38 @@ body:
     - 3.0.0
   validations:
     required: true
+- type: dropdown
+  id: AOS_version
+  attributes:
+    label: AOS Version
+    description: What version of AOS are you running?
+    options:
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 3.0.0
+  validations:
+    required: true
+- type: dropdown
+  id: HW_variant_version
+  attributes:
+    label: HW Variant Version
+    description: What version of HW variant are you running?
+    options:
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 3.0.0
+  validations:
+    required: true
 - type: input
   id: Artifactory_URL
   attributes:
     label: Artifactory URL to delivery package directory
+    placeholder: e.g. www.artifactory.com/repository/delivery_package_directory/
   validations:
     required: true
