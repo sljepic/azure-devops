@@ -75,6 +75,5 @@ body:
 - type: markdown
   attributes:
     value: "## Delivery package mapping:"
-    description: Please provide relative paths from delivery package
 
 
