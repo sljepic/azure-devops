@@ -40,8 +40,9 @@ body:
     label: HW variant version
   validations:
     required: true
+- type: input
+  id: Artifactory_URL
   attributes:
     label: Artifactory URL to delivery package directory
   validations:
     required: true
-  attributes:
