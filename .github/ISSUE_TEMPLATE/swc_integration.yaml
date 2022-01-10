@@ -14,6 +14,7 @@ body:
   id: swc_name
   attributes:
     label: Software component name
+    placeholder: e.g. v1.0
   validations:
     required: true
 - type: input
@@ -22,19 +23,19 @@ body:
     label: Software component version
   validations:
     required: true
-- type: input
+- type: dropdown
   id: PIE_version
   attributes:
     label: PIE version
   validations:
     required: true
-- type: input
+- type: dropdown
   id: AOS_version
   attributes:
     label: AOS version
   validations:
     required: true
-- type: input
+- type: dropdown
   id: HW_variant_version
   attributes:
     label: HW variant version
