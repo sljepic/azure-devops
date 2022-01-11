@@ -1,25 +1,149 @@
----
-name: SWC integration request
-about: Use this template for adding or updating existing software components.
+name: Software component integration
+description: Issue request with all required input informations
 title: "[SWC Integration]: "
-labels: pre-integration
-assignees: team-alas, team-volta
----
+labels: [pre-integration]
+assignees:
+- team alas
+- team volta
+body:
+- type: markdown
+  attributes:
+    value: |
+      Fill all required fields related to SWC addition/update
+- type: input
+  id: swc_name
+  attributes:
+    label: Software component name
+  validations:
+    required: true
+- type: input
+  id: swc_version
+  attributes:
+    label: Software component version
+    placeholder: e.g. v1.0
+  validations:
+    required: true
+- type: dropdown
+  id: PIE_version
+  attributes:
+    label: PIE Version
+    description: What version of PIE are you running?
+    options:
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 3.0.0
+  validations:
+    required: true
+- type: dropdown
+  id: AOS_version
+  attributes:
+    label: AOS Version
+    description: What version of AOS are you running?
+    options:
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 3.0.0
+  validations:
+    required: true
+- type: dropdown
+  id: HW_variant_version
+  attributes:
+    label: HW Variant Version
+    description: What version of HW variant are you running?
+    options:
+    - 1.0.0
+    - 1.0.1
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 3.0.0
+  validations:
+    required: true
+- type: input
+  id: Artifactory_URL
+  attributes:
+    label: Artifactory URL to delivery package directory
+    placeholder: e.g. www.artifactory.com/repository/delivery_package_directory/
+  validations:
+    required: true
+- type: markdown
+  attributes:
+    value: "## Delivery package mapping:"
+    description: Please provide relative paths from delivery package
+- type: input
+  id: release_notes
+  attributes:
+    label: Release notes relative file path
+    description: Please provide Release notes relative path
+  validations:
+    required: true
+- type: input
+  id: ait_report
+  attributes:
+    label: AIT report relative file path
+    description: Please provide AIT report relative path
+validations:
+    required: true
+- type: input
+  id: misra 
+  attributes:
+    label: MISRA file relative file path
+    description: Please provide MISRA relative path 
+  validations:
+    required: true
+- type: input
+  id: libraries
+  attributes:
+    label: Libraries relative file path
+    description: Please provide relative path to Libraries
+  validations:
+    required: true
+- type: input
+  id: sillibraries 
+  attributes:
+    label: SiLLibraries relative file path
+    description: Please provide relative path to SiLLibraries
+  validations:
+    required: true
+- type: input
+  id: binaries  
+  attributes:
+    label: Binaries relative file path
+    description: Please provide relative path to Binaries
+  validations:
+    required: true
+- type: input
+  id: data_sets    
+  attributes:
+    label: Binaries relative file path
+    description: Please provide relative path to Data Sets
+  validations:
+    required: true
+- type: input
+  id: map_path   
+  attributes:
+    label: Map relative file path
+    description: Please provide Map relative file path
+  validations:
+    required: true
+- type: input
+  id: log_path  
+  attributes:
+    label: Log relative file path
+    description: Please provide Log relative file path  
+  validations:
+    required: true
+- type: input
+  id: test_vectors  
+  attributes:
+    label: Test vectors relative file path
+    description: Please provide Test vectors relative file path
+  validations:
+    required: true
 
-SWC name: <swc_name>
-SWC version: <swc_version>
-PIE version: <pie_version>
-AOS version: <aos_version>
-HW variant: <hw_variant>
-Artifactory URL to delivery package directory: <artifactory_url>
-Delivery package mapping:
-*    Release notes relative file path: <relative_file_path>
-*    AIT report relative file path: <relative_file_path>
-*    MISRA relative file path: <relative_file_path>
-*    Libraries relative directory path: <relative_dir_path>
-*    SiLLibraries relative directory path: <relative_dir_path>
-*    Binaries relative directory path: <relative_dir_path>
-*    Data Sets relative directory path: <relative_dir_path>
-*    Map relative file path: <relative_file_path>
-*    Log relative file path: <relative_file_path>
-*    Test vectors relative directory path: <relative_dir_path>
