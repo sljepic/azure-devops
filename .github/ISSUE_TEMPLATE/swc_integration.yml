@@ -75,7 +75,6 @@ body:
 - type: markdown
   attributes:
     value: "## Delivery package mapping:"
-    description: Please provide relative paths from delivery package
 - type: input
   id: release_notes
   attributes:
@@ -88,8 +87,8 @@ body:
   attributes:
     label: AIT report relative file path
     description: Please provide AIT report relative path
-validations:
-    required: true
+  validations:
+      required: true
 - type: input
   id: misra 
   attributes:
